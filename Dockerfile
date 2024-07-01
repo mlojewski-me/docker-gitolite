@@ -2,7 +2,7 @@ FROM alpine:3.20
 
 MAINTAINER Michael Elsdorfer <michael@elsdoerfer.com>
 
-ARG UID=1027
+ARG UID=1024
 RUN adduser -S -G users -u ${UID} -s /bin/sh git
 
 RUN apk add --no-cache openssh-server gitolite
