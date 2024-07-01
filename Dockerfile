@@ -14,7 +14,7 @@ RUN chown -R git:git /home/git
 RUN rm -f /etc/ssh/ssh_host_*
 
 # Use dumb-init as PID1
-ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_amd64 /usr/sbin/init
+ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64 /usr/sbin/init
 RUN chmod +x /usr/sbin/init
 
 # Our init script will do some setup work such as generating host keys on a per-container basis.
